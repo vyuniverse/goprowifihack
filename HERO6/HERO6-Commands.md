@@ -1,6 +1,6 @@
-### GoPro HERO5 Commands, Status and Notes
+### GoPro HERO6 Commands, Status and Notes
 
-Firmware revision: HD5.02.02.00.00
+Firmware revision: HD6.01.01.51.00
 
 Sample /status
 
@@ -52,11 +52,13 @@ Sample /status
 * Power Off: http://10.5.5.9/gp/gpControl/command/system/sleep
 * Power On: Send a Wake On Lan command with the parameters: IP address: 10.5.5.9, Subnet Mask 255.255.255.0, Port 9.
 
+##### Digital Zoom:
+
+http://10.5.5.9/gp/gpControl/command/digital_zoom?range_pcnt=[PERCENTAGE FROM 0 to 100]
+
 ##### Pairing new device:
 
 #### Pairing:
-
-For Hero 5 Black/Session:
 
 Initiate pairing in Connections > New > GoPro App
 
@@ -68,13 +70,13 @@ http://10.5.5.9/gp/gpControl/command/wireless/pair/complete?success=1&deviceName
 
 ##### Resolutions:
 * 4K: http://10.5.5.9/gp/gpControl/setting/2/1
+* 4K 4:3: http://10.5.5.9/gp/gpControl/setting/2/18
 * 2.7K: http://10.5.5.9/gp/gpControl/setting/2/4
 * 2.7K 4:3: http://10.5.5.9/gp/gpControl/setting/2/6
 * 1440p: http://10.5.5.9/gp/gpControl/setting/2/7
 * 1080p: http://10.5.5.9/gp/gpControl/setting/2/9
 * 960p: http://10.5.5.9/gp/gpControl/setting/2/10
 * 720p: http://10.5.5.9/gp/gpControl/setting/2/12
-* WVGA: http://10.5.5.9/gp/gpControl/setting/2/17
 
 ##### Frame Rate:
 * 240fps:	http://10.5.5.9/gp/gpControl/setting/3/0
@@ -125,10 +127,6 @@ http://10.5.5.9/gp/gpControl/command/wireless/pair/complete?success=1&deviceName
 * 30: http://10.5.5.9/gp/gpControl/setting/5/5
 * 60: http://10.5.5.9/gp/gpControl/setting/5/6
 
-##### Spot Meter:
-
-* off: http://10.5.5.9/gp/gpControl/setting/9/0
-* on: http://10.5.5.9/gp/gpControl/setting/9/1
 
 ##### EIS (Video Stabilisation):
 * On: http://10.5.5.9/gp/gpControl/setting/78/1
@@ -245,11 +243,6 @@ Value | URL
 * 20: http://10.5.5.9/gp/gpControl/setting/19/5
 * 30: http://10.5.5.9/gp/gpControl/setting/19/6
 
-##### Spot Meter:
-
-* off: http://10.5.5.9/gp/gpControl/setting/20/0
-* on: http://10.5.5.9/gp/gpControl/setting/20/1
-
 ###### RAW Photo:
 * On: http://10.5.5.9/gp/gpControl/setting/82/1
 * Off: http://10.5.5.9/gp/gpControl/setting/82/0
@@ -258,10 +251,10 @@ Value | URL
 * On: http://10.5.5.9/gp/gpControl/setting/98/1
 * Off: http://10.5.5.9/gp/gpControl/setting/98/0
 
-###### WDR Photo:
+###### HDR Photo:
 
-* On: http://10.5.5.9/gp/gpControl/setting/77/1
-* Off: http://10.5.5.9/gp/gpControl/setting/77/0
+* On: http://10.5.5.9/gp/gpControl/setting/100/1
+* Off: http://10.5.5.9/gp/gpControl/setting/100/0
 
 ##### ProTune:
 
@@ -272,7 +265,11 @@ Value | URL
 
 * Auto: http://10.5.5.9/gp/gpControl/setting/22/0
 * 3000k: http://10.5.5.9/gp/gpControl/setting/22/1
+* 2300K: http://10.5.5.9/gp/gpControl/setting/22/8
+* 2800K: http://10.5.5.9/gp/gpControl/setting/22/9
+* 3200K: http://10.5.5.9/gp/gpControl/setting/22/10
 * 4000k: http://10.5.5.9/gp/gpControl/setting/22/5
+* 4500K: http://10.5.5.9/gp/gpControl/setting/22/11
 * 4800k: http://10.5.5.9/gp/gpControl/setting/22/6
 * 5500k: http://10.5.5.9/gp/gpControl/setting/22/2
 * 6000k: http://10.5.5.9/gp/gpControl/setting/22/7
@@ -373,11 +370,6 @@ Value | URL
 * 30: http://10.5.5.9/gp/gpControl/setting/30/30
 * 60: http://10.5.5.9/gp/gpControl/setting/30/60
 
-##### Spot Meter:
-
-* off: http://10.5.5.9/gp/gpControl/setting/33/0
-* on: http://10.5.5.9/gp/gpControl/setting/33/1
-
 ##### Burst Rate:
 
 * 3/1: http://10.5.5.9/gp/gpControl/setting/29/0
@@ -411,8 +403,12 @@ Value | URL
 ##### White Balance:
 
 * Auto: http://10.5.5.9/gp/gpControl/setting/35/0
+* 2300K: http://10.5.5.9/gp/gpControl/setting/35/8
+* 2800K: http://10.5.5.9/gp/gpControl/setting/35/9
 * 3000k: http://10.5.5.9/gp/gpControl/setting/35/1
+* 3200K: http://10.5.5.9/gp/gpControl/setting/35/10
 * 4000k: http://10.5.5.9/gp/gpControl/setting/35/5
+* 4500K: http://10.5.5.9/gp/gpControl/setting/35/11
 * 4800k: http://10.5.5.9/gp/gpControl/setting/35/6
 * 5500k: http://10.5.5.9/gp/gpControl/setting/35/2
 * 6000k: http://10.5.5.9/gp/gpControl/setting/35/7
@@ -481,7 +477,7 @@ Value | URL
 * On: http://10.5.5.9/gp/gpControl/setting/86/1
 * Off: http://10.5.5.9/gp/gpControl/setting/86/0
 
-##### LEDs on HERO5 Black:
+##### LEDs on HERO6 Black:
 
 * Off: http://10.5.5.9/gp/gpControl/setting/91/0
 * On: http://10.5.5.9/gp/gpControl/setting/91/2
@@ -549,6 +545,16 @@ Value | URL
 * 2m: http://10.5.5.9/gp/gpControl/setting/59/2
 * 3m: http://10.5.5.9/gp/gpControl/setting/59/3
 * 5m: http://10.5.5.9/gp/gpControl/setting/59/4
+
+##### Auto Lock Screen:
+
+* 7 sec timeout: http://10.5.5.9/gp/gpControl/setting/103/5
+* off: http://10.5.5.9/gp/gpControl/setting/103/3
+
+##### Turn on by saying "GoPro Turn On":
+
+* ON: http://10.5.5.9/gp/gpControl/setting/104/1
+* OFF: http://10.5.5.9/gp/gpControl/setting/104/0
 
 ##### Set date and time
 
